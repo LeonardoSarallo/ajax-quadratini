@@ -14,7 +14,36 @@ $(document).ready(function() {
   }
 
   $(document).on('click', '.square', function() {
-    alert('ciao');
+
+      var thisSquare= $(this);
+      $.ajax( {
+          url: 'https://www.boolean.careers/api/random/int',
+          method: 'GET',
+          success: function(data) {
+            var numero = data.response;
+              
+            console.log(data.response);
+            if (numero <= 5) {
+                thisSquare.addClass('yellow');
+                
+            }
+            else {
+                thisSquare.addClass('green');
+                
+            }
+            
+          },
+          error: function() {
+              console.log('questo è un errore');
+              
+
+        },
+       
+
+    })
+
+
+    
   });
 
 

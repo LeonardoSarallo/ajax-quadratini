@@ -28,3 +28,11 @@ body {
 .template {
     display: none;
 }
+
+.yellow {
+  background: yellow;
+}
+
+.green {
+  background: green;
+}
