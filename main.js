@@ -12,4 +12,10 @@ $(document).ready(function() {
     $('.container').append(template);
 
   }
+
+  $(document).on('click', '.square', function() {
+    alert('ciao');
+  });
+
+
 });
