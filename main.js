@@ -37,15 +37,10 @@ $(document).ready(function() {
           error: function() {
               console.log('questo è un errore');
               
-
         },
        
-
     })
 
-
-    
   });
-
 
 });
