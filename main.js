@@ -25,11 +25,12 @@ $(document).ready(function() {
             console.log(data.response);
             if (numero <= 5) {
                 thisSquare.addClass('yellow');
+                thisSquare.text(numero);
                 
             }
             else {
                 thisSquare.addClass('green');
-                
+                thisSquare.text(numero);
             }
             
           },
